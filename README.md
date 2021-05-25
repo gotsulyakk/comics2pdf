@@ -1,2 +1,2 @@
 # comics2pdf
-Convert comics formats to pdf format
+Convert comics formats to pdf
