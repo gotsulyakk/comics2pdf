@@ -11,7 +11,8 @@ class ComicsToPDF:
         self.source_filepath = source_filepath
         self.dest_filepath = dest_filepath
         self.temp_directory = Path(
-            f"unzipped-{source_filepath.split(os.path.sep)[-1][:-4]}")
+            f"unzipped-{source_filepath.split(os.path.sep)[-1][:-4]}"
+        )
 
     def convert_comics(self):
         """Manager method to
