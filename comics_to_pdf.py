@@ -35,15 +35,9 @@ class ComicsToPDF:
         included_extensions = ['jpg','jpeg', 'bmp', 'png', 'gif']
         
         #TODO: Add checking if we unzipped folder or images
-        # if len([name for name in os.listdir(self.temp_directory)) < 2:
-        #     print("There are no images but another directory")
 
-        print(os.walk(self.temp_directory))
-
-        page_files = sorted([pf for _, _, pf in os.walk(self.temp_directory)
+        page_files = sorted([pf for  pf in os.listdir(self.temp_directory)
                  if any(pf.endswith(ext) for ext in included_extensions)])
-
-        print(page_files)
 
         page_list = []
         for page in page_files:
